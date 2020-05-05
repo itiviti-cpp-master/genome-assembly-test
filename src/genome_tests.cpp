@@ -94,30 +94,27 @@ TEST(GenomeTest, it_works_when_k_3_d_7_n_4)
     EXPECT_EQ("CATACGGCGATCGGTTGCT", assembly(3, {"GATCGGT", "CATACGG", "GGTTGCT", "CGGCGAT"}));
 }
 
-TEST(GenomeTest, it_works_when_k_4_d_9_n_20)
+TEST(GenomeTest, it_works_when_k_5_d_9_n_17)
 {
     EXPECT_EQ(
-        "GCCCAGAACTTCATGGCGACTTACCAAACCTAAGTAGGGCCTCGTGCAGCGTTAAAGCAACTCAGGCTGTCAAGGCACAAATGTGGGGGAGAGTCTGCAATGTT",
-        assembly(4, {"CAAGGCACA",
-                     "TCATGGCGA",
-                     "AGGGCCTCG",
-                     "TGCAATGTT",
-                     "TAAGTAGGG",
-                     "AAACCTAAG",
-                     "GCCCAGAAC",
-                     "GCAGCGTTA",
-                     "GTTAAAGCA",
-                     "GCGACTTAC",
-                     "GAGTCTGCA",
-                     "GCTGTCAAG",
-                     "CTCAGGCTG",
-                     "TTACCAAAC",
-                     "GGGGAGAGT",
-                     "CACAAATGT",
-                     "GAACTTCAT",
-                     "ATGTGGGGG",
-                     "CTCGTGCAG",
-                     "AGCAACTCA"}));
+        "ACTGGTGCAAGAGCGTCCCACGTCTGTAATATTCAGAGGCTGGGCCGAAAATCTCCTAACTGACGATACTTAA",
+        assembly(5, {"AAATCTCCT",
+                     "AAGAGCGTC",
+                     "AGGCTGGGC",
+                     "TGGGCCGAA",
+                     "CGTCTGTAA",
+                     "TCAGAGGCT",
+                     "TGTAATATT",
+                     "ATATTCAGA",
+                     "GTGCAAGAG",
+                     "TGACGATAC",
+                     "TAACTGACG",
+                     "CCCACGTCT",
+                     "CCGAAAATC",
+                     "GCGTCCCAC",
+                     "GATACTTAA",
+                     "CTCCTAACT",
+                     "ACTGGTGCA"}));
 }
 
 namespace
