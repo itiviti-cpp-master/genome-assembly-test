@@ -36,9 +36,9 @@ TEST(GenomeTest, it_works_when_n_1)
     EXPECT_EQ("TTG", assembly(1, {"TTG"}));
     EXPECT_EQ("CAT", assembly(1, {"CAT"}));
     EXPECT_EQ("AATGTCC", assembly(2, {"AATGTCC"}));
-    EXPECT_EQ("AGCGDTACTGGADTACCCC", assembly(3, {"AGCGDTACTGGADTACCCC"}));
-    EXPECT_EQ("AGCGDTACTGGADTACCCC", assembly(4, {"AGCGDTACTGGADTACCCC"}));
-    EXPECT_EQ("AGCGDTACTGGADTACCCC", assembly(5, {"AGCGDTACTGGADTACCCC"}));
+    EXPECT_EQ("AGCGCTACTGGACTACCCC", assembly(3, {"AGCGCTACTGGACTACCCC"}));
+    EXPECT_EQ("AGCGCTACTGGACTACCCC", assembly(4, {"AGCGCTACTGGACTACCCC"}));
+    EXPECT_EQ("AGCGCTACTGGACTACCCC", assembly(5, {"AGCGCTACTGGACTACCCC"}));
 }
 
 TEST(GenomeTest, it_works_when_k_overlaps_half_d)
@@ -88,7 +88,7 @@ TEST(GenomeTest, it_works_when_k_2_d_5_n_3)
 
 TEST(GenomeTest, it_works_when_k_3_d_7_n_4)
 {
-    EXPECT_EQ("AGCGDTACTGGADTACCCC", assembly(3, {"AGCGDTA", "DTACCCC", "DTACTGG", "TGGADTA"}));
+    EXPECT_EQ("AGCGCTACTGGACTACCCC", assembly(3, {"AGCGCTA", "CTACCCC", "CTACTGG", "TGGACTA"}));
     EXPECT_EQ("GTGCCTGAGCGGCGTTAAG", assembly(3, {"GCGGCGT", "GTGCCTG", "CGTTAAG", "CTGAGCG"}));
     EXPECT_EQ("CGATGTAAGCTATGCAGTT", assembly(3, {"GCTATGC", "CGATGTA", "TGCAGTT", "GTAAGCT"}));
     EXPECT_EQ("CATACGGCGATCGGTTGCT", assembly(3, {"GATCGGT", "CATACGG", "GGTTGCT", "CGGCGAT"}));
