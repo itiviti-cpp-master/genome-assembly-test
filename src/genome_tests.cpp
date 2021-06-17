@@ -30,6 +30,15 @@ TEST(GenomeTest, it_works_when_k_1_d_2)
     EXPECT_EQ("GAT", assembly(1, {"GA", "AT"}));
     EXPECT_EQ("CAT", assembly(1, {"AT", "CA"}));
 }
+    
+TEST(GenomeTest, it_works_when_k_2_d_3)
+{
+    EXPECT_EQ("ACGC", assembly(2, {"ACG", "CGC"}));
+    EXPECT_EQ("GATG", assembly(2, {"ATG", "GAT"}));
+    EXPECT_EQ("GTCCA", assembly(2, {"CCA", "GTC", "TCC"}));
+    EXPECT_EQ("TAC", assembly(2, {"TAC"}));
+}
+   
 
 TEST(GenomeTest, it_works_when_n_1)
 {
